@@ -1,17 +1,30 @@
-import React from 'react';
+import React, { useState } from 'react';
 import '../styles/app.css';
 import { useSpring, animated } from '@react-spring/web';
 
 function App() {
+  const [clicked, setClicked] = useState(true);
+
   const [springs, api] = useSpring(() => ({
-    from: { x: 0 },
+    from: { x: 50 },
   }));
 
   const handleClick = () => {
-    api.start({
-      from: { x: 0 },
-      to: { x: 1500 },
-    });
+    if (clicked) {
+      api.start({
+        from: { x: 50 },
+        to: { x: 1590 },
+      });
+      setClicked(false);
+    }
+
+    if (!clicked) {
+      api.start({
+        from: { x: 1590 },
+        to: { x: 50 },
+      });
+      setClicked(true);
+    }
   };
 
   return (
