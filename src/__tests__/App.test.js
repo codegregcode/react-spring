@@ -13,4 +13,10 @@ describe('App', () => {
     const aniSqr = screen.getByTestId('animated-sqr');
     expect(aniSqr).toBeInTheDocument();
   });
+
+  it('renders the 2nd animated sqr', () => {
+    render(<App />);
+    const sqr2 = screen.getByTestId('animated-sqr2');
+    expect(sqr2).toBeInTheDocument();
+  });
 });
