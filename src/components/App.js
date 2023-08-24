@@ -31,6 +31,7 @@ function App() {
     <div className="App">
       <h1>Hello World</h1>
       <animated.div
+        data-testid="animated-sqr"
         onClick={handleClick}
         style={{
           width: 80,
