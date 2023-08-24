@@ -1,3 +1,18 @@
 .App {
   text-align: center;
 }
+
+.animation-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 16px;
+}
+
+.centered-h1 {
+  margin-bottom: 16px;
+}
+
+.spacer {
+  flex: 0.1;
+}
