@@ -37,3 +37,13 @@ The animation is created using the `useSpring` hook from `@react-spring/web` lib
 ```
 
 A good start to learning about react spring!
+
+## 5/9/23
+
+It's been a couple weeks since last working on this project (woops 😅), and I haven't really added anything new today, but I did spend about an hour tidying up the project.
+
+I created seperate components for the animations `<Title />` & `<Boxes />` which are then imported into `<App />`
+
+Doing this means that when I add further animations to the project it'll keep the code nice and seperated, and much easier to manage!
+
+I hope that in my next update I will be adding some new content to the project!
